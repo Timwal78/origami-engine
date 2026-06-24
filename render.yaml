@@ -1,0 +1,63 @@
+# Script Master Labs LLC — Origami Engine on Render
+# Two services share one persistent disk:
+#   1. origami-webhook  (Web Service) — accepts CSV drops + /status endpoint
+#   2. origami-cron     (Cron Job)    — 8 AM weekdays: qualify + sequence + export
+
+services:
+
+  # ── Web Service (webhook) ─────────────────────────────────────────────────
+  - type: web
+    name: origami-webhook
+    runtime: python
+    buildCommand: "pip install -e ."
+    startCommand: "python -m origami.webhook"
+    plan: starter          # $7/mo — needed for persistent disk
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ORIGAMI_DB
+        value: /var/data/origami.db
+      - key: ORIGAMI_ICP
+        value: /var/data/icp.json
+      - key: SENDER_NAME
+        value: "Script Master Labs LLC"
+      - key: SENDER_ADDRESS
+        sync: false
+      - key: OPTOUT_URL
+        sync: false
+      - key: ORIGAMI_VALUE_PROP
+        value: "x402 lets autonomous agents pay per-call for MCP tools — no subscriptions, no API keys, no human in the loop."
+      - key: PORT
+        value: "8080"
+    disk:
+      name: origami-data
+      mountPath: /var/data
+      sizeGB: 1
+
+  # ── Cron Job ──────────────────────────────────────────────────────────────
+  - type: cron
+    name: origami-cron
+    runtime: python
+    buildCommand: "pip install -e ."
+    schedule: "0 8 * * 1-5"   # 8 AM ET weekdays
+    startCommand: "python -m origami.cli qualify 1; python -m origami.cli sequence 1; python -m origami.cli export 1"
+    plan: starter
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ORIGAMI_DB
+        value: /var/data/origami.db
+      - key: ORIGAMI_ICP
+        value: /var/data/icp.json
+      - key: SENDER_NAME
+        value: "Script Master Labs LLC"
+      - key: SENDER_ADDRESS
+        sync: false
+      - key: OPTOUT_URL
+        sync: false
+      - key: ORIGAMI_VALUE_PROP
+        value: "x402 lets autonomous agents pay per-call for MCP tools — no subscriptions, no API keys, no human in the loop."
+    disk:
+      name: origami-data
+      mountPath: /var/data
+      sizeGB: 1
