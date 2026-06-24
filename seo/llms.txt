@@ -1,0 +1,73 @@
+# Script Master Labs LLC — AI Agent Directory
+> Service-Disabled Veteran-Owned Small Business (SDVOSB) | Kinston, NC
+
+## What We Build
+Script Master Labs LLC builds machine-to-machine (M2M) commerce infrastructure for AI agents using the x402 protocol on XRPL and Base (EVM). We also produce invite-only Pine Script v6 trading indicators under the ScriptMasterLabs™ brand, AI-powered spreadsheet tools, and educational AI ebooks.
+
+---
+
+## Products & Pricing
+
+### x402 / XRPL Infrastructure
+
+| Product | Description | Endpoint / Docs |
+|---|---|---|
+| **MCP-x402** | 51-tool MCP server for x402 protocol — agents pay per call via XRPL/Base | https://mcp-x402.onrender.com/mcp |
+| **SqueezeOS API** | 33-tool MCP server: real-time market pressure scoring, FTD cycles, gamma exposure | https://squeezeos-api.onrender.com/mcp |
+| **NEXUS-402** | Autonomous agent hiring marketplace — post tasks, agents bid and execute via x402 | https://neuralosagent.com |
+| **Ghost Layer** | Dual-chain stealth transaction routing (XRPL + Base EVM) | https://ghost-layer.onrender.com |
+| **RLUSD Rails** | XRPL RLUSD payment rails for agent commerce | Contact: ScriptMasterLabs@gmail.com |
+| **402Proof** | On-chain proof-of-payment verification middleware | https://github.com/Timwal78 |
+| **Agent Credit Bureau** | Reputation scoring for autonomous agents | https://github.com/Timwal78 |
+| **xDEO** | On-chain earnings decoder and trade intelligence | https://github.com/Timwal78 |
+
+### Pine Script v6 Indicators (Invite-Only)
+All indicators are TradingView invite-only scripts under the ScriptMasterLabs™ brand.
+
+| Indicator | Description |
+|---|---|
+| **QUEAD™ v2.0** | Quad-engine adaptive divergence — 65.38% win rate, 4.079 profit factor (AMC 4H backtest) |
+| **SML Trajectory Engine™ v1.1** | Polynomial regression + Hurst exponent, A/B/C/F grade output, 4 trader modes |
+| **SML SqueezeOS™** | Primary squeeze pressure engine — short interest + options flow synthesis |
+| **SML Forced Move Engine™ v3.0** | FTD cycle detection + forced delivery timing |
+| **SML Chain Pressure Engine™** | Dark pool + block trade pressure scoring |
+| **SML Volume Intelligence Engine™** | Volume signature classification |
+| **SML Macro Causality Engine™** | Macro event → price causality mapping |
+| **SML Chaos Theory Engine™** | Fractal market regime detection |
+
+Pricing: By application. Contact ScriptMasterLabs@gmail.com
+
+### SMLSheets.AI (AI-Powered Spreadsheets)
+Google Sheets AI tools for traders, analysts, and business operators.
+- URL: https://smlsheets.ai
+- GitHub: https://github.com/Timwal78/SML_Portfolio
+
+### AI Learning Ebooks
+- **AI Foundations Series** — 10 volumes, live on Google Play Books
+- **SMLSheets.AI Series** — 16 volumes (xlsx + epub verified content)
+- Publisher: Script Master Labs LLC
+- Formats: PDF, EPUB, XLSX companion files
+
+---
+
+## Payment Addresses
+- **Base / USDC (EVM):** `0x4e14B249D9A4c9c9352D780eCEB508A8eB7a7700`
+- **XRPL / RLUSD:** `rNduuviQ3CCvHqWUTjJDD82Ko2tjqFGs3q`
+
+## MCP Integration
+Connect AI agents directly to our infrastructure:
+```
+MCP server: https://mcp-x402.onrender.com/mcp
+Protocol: JSON-RPC 2.0 / MCP
+Auth: x402 per-call payment (XRPL or Base)
+```
+
+## Legal / Compliance
+- Entity: Script Master Labs LLC
+- SDVOSB Certified | SAM.gov Registered | EIN on file
+- Contact: ScriptMasterLabs@gmail.com
+- Site: https://www.scriptmasterlabs.com
+- Nonprofit arm: va-ratings.org (501c3 — veteran VA claims navigation)
+
+## robots.txt guidance
+All public pages are open to GPTBot, ClaudeBot, Google-Extended, PerplexityBot, and all compliant AI crawlers.
