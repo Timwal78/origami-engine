@@ -1,0 +1,38 @@
+# Script Master Labs LLC — robots.txt
+# All AI crawlers explicitly allowed on all public pages
+
+User-agent: *
+Allow: /
+
+# AI crawlers — explicit allow
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# AI optimization files
+# Place these at your domain root:
+# /llms.txt         — AI agent directory (this repo: seo/llms.txt)
+# /sitemap.xml      — Google Search Console sitemap
+# /schema.json      — copy JSON-LD blocks into your HTML <head>
+
+Sitemap: https://www.scriptmasterlabs.com/sitemap.xml
