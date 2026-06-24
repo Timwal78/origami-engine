@@ -1,0 +1,93 @@
+[
+  {
+    "comment": "PASTE THIS BLOCK INTO YOUR HTML <head> — Organization schema",
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Script Master Labs LLC",
+    "legalName": "Script Master Labs LLC",
+    "url": "https://www.scriptmasterlabs.com",
+    "logo": "https://www.scriptmasterlabs.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "ScriptMasterLabs@gmail.com",
+      "contactType": "customer support"
+    },
+    "sameAs": [
+      "https://github.com/Timwal78",
+      "https://smlsheets.ai",
+      "https://neuralosagent.com"
+    ],
+    "description": "Script Master Labs LLC is a Service-Disabled Veteran-Owned Small Business building x402 machine-to-machine payment infrastructure on XRPL and Base, invite-only Pine Script v6 trading indicators, AI-powered spreadsheet tools, and AI education ebooks."
+  },
+  {
+    "comment": "MCP-x402 — SoftwareApplication schema",
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MCP-x402",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "url": "https://mcp-x402.onrender.com/mcp",
+    "description": "51-tool Model Context Protocol server enabling autonomous AI agents to pay per API call using the x402 protocol on XRPL and Base networks. No subscriptions, no API keys, no human in the loop.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "0.00",
+      "description": "Per-call micropayment via x402 protocol. Payment accepted in USDC on Base or RLUSD on XRPL."
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Script Master Labs LLC"
+    }
+  },
+  {
+    "comment": "SqueezeOS API — SoftwareApplication schema",
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SqueezeOS API",
+    "applicationCategory": "FinanceApplication",
+    "url": "https://squeezeos-api.onrender.com/mcp",
+    "description": "33-tool MCP server delivering real-time market pressure scoring, FTD cycle detection, gamma exposure analysis, and short squeeze intelligence for US equities via AI agent integration.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "description": "Per-call via x402 protocol."
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Script Master Labs LLC"
+    }
+  },
+  {
+    "comment": "ScriptMasterLabs Pine Script indicators — Product schema",
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "ScriptMasterLabs™ Pine Script v6 Indicators",
+    "description": "Invite-only suite of 50+ proprietary Pine Script v6 trading indicators for TradingView. Includes QUEAD™ v2.0 (65.38% win rate / 4.079 profit factor on AMC 4H), SML Trajectory Engine™, SML SqueezeOS™, SML Forced Move Engine™, and more. Specializes in meme stock mechanics: FTD cycles, gamma exposure, dark pool analysis.",
+    "brand": {
+      "@type": "Brand",
+      "name": "ScriptMasterLabs™"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStoreOnly",
+      "description": "Invite-only access. Apply via ScriptMasterLabs@gmail.com."
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Script Master Labs LLC"
+    }
+  },
+  {
+    "comment": "SMLSheets.AI — SoftwareApplication schema",
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SMLSheets.AI",
+    "applicationCategory": "BusinessApplication",
+    "url": "https://smlsheets.ai",
+    "description": "AI-powered Google Sheets tools for traders, analysts, and business operators. Automates financial modeling, data enrichment, and workflow automation using AI directly inside spreadsheets.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Script Master Labs LLC"
+    }
+  }
+]
